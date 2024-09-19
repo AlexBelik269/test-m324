@@ -10,8 +10,8 @@ describe('calculate', function () {
     assert.strictEqual(calculate(2, 3, 'subtraction'), -1);
   });
 
-  it('should return error for dividion', function () {
-    assert.strictEqual(calculate(2, 3, 'division'), -1);
+  it('should throw an error for invalid operation', function () {
+    assert.throws(() => calculate(2, 3, 'division'), /Invalid operation/);
   });
 
 });
