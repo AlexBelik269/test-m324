@@ -1,3 +1,4 @@
+const ConflictVariable = 15;
 const UsedVariable = 42;
 
 if (UsedVariable === 42) {
